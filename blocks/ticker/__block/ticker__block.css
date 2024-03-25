@@ -1,0 +1,13 @@
+.ticker__block {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  background-color: rgba(245, 73, 50, 1);
+}
+
+@media screen and (max-width: 650px) {
+  .ticker__block {
+    height: 38px;
+  }
+}

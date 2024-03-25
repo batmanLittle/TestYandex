@@ -1,0 +1,13 @@
+.support-info__description {
+  display: flex;
+  max-width: 1222px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 850px) {
+  .support-info__description {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,18 @@
+.header__block {
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-image: url(../../../images/header-image.jpg);
+  height: 700px;
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  width: 100%;
+  background-size: 1920px 700px;
+}
+
+@media screen and (max-width: 650px) {
+  .header__block {
+    background-image: url(../../../images/header-background.screen.jpg);
+    background-size: 375px 812px;
+  }
+}

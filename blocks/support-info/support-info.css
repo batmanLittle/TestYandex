@@ -1,0 +1,21 @@
+.support-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0px 200px 0px;
+  gap: 64px;
+  max-width: 1366px;
+  width: 100%;
+  padding: 0px 15px 0px 15px;
+  /* box-sizing: border-box; */
+}
+
+@media screen and (max-width: 850px) {
+  .support-info {
+    max-width: 375px;
+    margin: 48px 0px 120px 0px;
+    padding: 0px;
+    gap: 34px;
+  }
+}

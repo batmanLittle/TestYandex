@@ -1,0 +1,6 @@
+@media screen and (max-width: 850px) {
+  .support-info__description-table_column {
+    display: flex;
+    flex-direction: column;
+  }
+}

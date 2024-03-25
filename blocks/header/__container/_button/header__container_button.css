@@ -1,0 +1,35 @@
+.header__container_button {
+  width: 263px;
+  height: 72px;
+  padding: 15px 60px 15px 60px;
+  border: 2px solid rgba(31, 31, 31, 1);
+  border-radius: 66px;
+  background-color: inherit;
+  text-align: center;
+  font-family: "Golos Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 20.8px */
+  color: rgba(31, 31, 31, 1);
+  font-family: "GolosUIWebRegular", sans-serif;
+}
+
+.button-black {
+  background-color: rgba(31, 31, 31, 1);
+  color: white;
+}
+
+/* .button-white {
+  background-color: inherit;
+} */
+@media screen and (max-width: 650px) {
+  .header__container_button {
+    width: 335px;
+    height: 47px;
+    padding: 14px 43px 14px 43px;
+  }
+  .button-white {
+    background-color: white;
+  }
+}

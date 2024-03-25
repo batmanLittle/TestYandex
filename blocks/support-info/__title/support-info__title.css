@@ -1,0 +1,16 @@
+.support-info__title {
+  display: flex;
+  /* 
+  flex-direction: column; */
+  /* flex-wrap: wrap;
+  height: 250px; */
+  width: 100%;
+  max-width: 1222px;
+
+  justify-content: space-between;
+}
+@media screen and (max-width: 850px) {
+  .support-info__title {
+    display: none;
+  }
+}

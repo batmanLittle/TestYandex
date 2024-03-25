@@ -1,0 +1,13 @@
+.header__container_buttons {
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
+}
+
+@media screen and (max-width: 650px) {
+  .header__container_buttons {
+    margin-top: 32px;
+    flex-direction: column;
+    gap: 14px;
+  }
+}

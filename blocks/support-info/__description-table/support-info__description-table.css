@@ -1,0 +1,13 @@
+.support-info__description-table {
+  border-collapse: collapse;
+  border: 2px solid white;
+  margin-top: 60px;
+  margin-bottom: 48px;
+}
+@media screen and (max-width: 850px) {
+  .support-info__description-table {
+    margin-top: 44px;
+    margin-bottom: 40px;
+    max-width: 335px;
+  }
+}

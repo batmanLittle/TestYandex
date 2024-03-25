@@ -1,0 +1,8 @@
+.support-info__description-table_padding-bottom {
+  padding-bottom: 0px;
+}
+@media screen and (max-width: 850px) {
+  .support-info__description-table_padding-bottom {
+    border: 0px;
+  }
+}

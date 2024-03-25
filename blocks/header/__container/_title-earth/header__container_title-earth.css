@@ -1,0 +1,9 @@
+.header__container_title-earth {
+  padding-left: 32px;
+}
+
+@media screen and (max-width: 650px) {
+  .header__container_title-earth {
+    padding-left: 26px;
+  }
+}

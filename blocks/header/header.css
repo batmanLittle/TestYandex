@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: center;
+  max-height: 700px;
+  height: 100%;
+  background-image: url(../../images/header-background.jpg);
+  background-position: center;
+
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    height: 812px;
+  }
+}

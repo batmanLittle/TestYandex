@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index2.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="transformation__items">
+      <li class="ff">
+        <p class="transformation__item">
+          Строительство железнодорожной магистрали Москва-Васюки
+        </p>
+        <p class="transformation__item">
+          Открытие фешенебельной гостиницы «Проходная пешка» и других
+          небоскрёбов
+        </p>
+      </li>
+
+      <li class="ff">
+        <p class="transformation__item">
+          Поднятие сельского хозяйства в радиусе на тысячу километров:
+          производство овощей, фруктов, икры, шоколадных конфет
+        </p>
+      </li>
+
+      <li class="ff">
+        <p class="transformation__item">Строительство дворца для турнира</p>
+        <p class="transformation__item">
+          Размещение гаражей для гостевого автотранспорта
+        </p>
+      </li>
+
+      <li class="ff">
+        <p class="transformation__item">
+          Постройка сверхмощной радиостанции для передачи всему миру
+          сенсационных результатов
+        </p>
+      </li>
+
+      <li class="ff">
+        <p class="transformation__item">
+          Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых
+          самолётов и дирижаблей во все концы света, включая Лос-Анжелос
+          и Мельбурн
+        </p>
+      </li>
+    </ul>
+    <div class="aaa">
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <div class="gggg">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("ff");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.transformation__title-link {
+  color: rgba(48, 87, 162, 1);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "GolosUIWebRegular", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-decoration: none;
+  max-width: 280px;
+  display: inline-block;
+  margin-left: 18px;
+}
+@media screen and (max-width: 850px) {
+  .transformation__title-link {
+    font-size: 18px;
+    margin-left: 0px;
+    margin-top: 12px;
+    max-width: 335px;
+  }
+}

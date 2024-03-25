@@ -1,0 +1,12 @@
+.support-info__description-poster {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 704px;
+}
+
+@media screen and (max-width: 650px) {
+  .support-info__description-poster {
+    max-width: 336px;
+  }
+}

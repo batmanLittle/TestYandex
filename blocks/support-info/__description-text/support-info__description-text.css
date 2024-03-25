@@ -1,0 +1,16 @@
+.support-info__description-text {
+  color: rgba(48, 87, 162, 1);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "GolosUIWebRegular", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0px;
+  text-decoration: none;
+}
+@media screen and (max-width: 650px) {
+  .support-info__description-text {
+    font-size: 18px;
+  }
+}

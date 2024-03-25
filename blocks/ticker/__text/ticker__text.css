@@ -1,0 +1,30 @@
+.ticker__text {
+  color: rgba(255, 255, 255, 1);
+  margin: auto;
+  text-align: right;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Merriweather;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 24.2px */
+  text-transform: uppercase;
+  white-space: nowrap;
+  animation: text 10s linear infinite;
+}
+
+@media screen and (max-width: 650px) {
+  .ticker__text {
+    font-size: 16px;
+  }
+}
+
+@keyframes text {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

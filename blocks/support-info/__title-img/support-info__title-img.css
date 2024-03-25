@@ -1,0 +1,11 @@
+.support-info__title-img {
+  width: 394px;
+  height: 250px;
+}
+
+@media screen and (max-width: 650px) {
+  .support-info__title-img {
+    width: 335px;
+    height: 212px;
+  }
+}

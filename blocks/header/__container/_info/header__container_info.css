@@ -1,0 +1,13 @@
+.header__container_info {
+  max-width: 542px;
+  margin-left: 72px;
+  margin-top: 26px;
+}
+
+@media screen and (max-width: 650px) {
+  .header__container_info {
+    max-width: 335px;
+    margin-left: 0px;
+    margin-top: 18px;
+  }
+}

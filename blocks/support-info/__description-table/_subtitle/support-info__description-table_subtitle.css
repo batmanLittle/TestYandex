@@ -1,0 +1,25 @@
+.support-info__description-table_subtitle {
+  border: 1px solid rgba(208, 208, 208, 1);
+  text-align: left;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  padding-left: 16px;
+  color: rgba(49, 49, 49, 1);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "GolosUIWebRegular", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  width: 305px;
+}
+@media screen and (max-width: 850px) {
+  .support-info__description-table_subtitle {
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid rgba(208, 208, 208, 1);
+    margin-top: 12px;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+}

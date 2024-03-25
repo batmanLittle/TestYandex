@@ -1,0 +1,19 @@
+.transformation__title-text {
+  color: #313131;
+  max-width: 806px;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Merriweather;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin: 0px;
+}
+@media screen and (max-width: 850px) {
+  .transformation__title-text {
+    font-size: 36px;
+    line-height: 110%;
+    max-width: 335px;
+  }
+}
