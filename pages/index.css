@@ -41,3 +41,5 @@
 @import url(../blocks/transformation/__items/transformation__items.css);
 @import url(../blocks/transformation/__item/transformation__item.css);
 @import url(../blocks/transformation/__image/transformation__image.css);
+@import url(../blocks/transformation/__item-number/transformation__item-number.css);
+@import url(../blocks/transformation/__item-text/transformation__item-text.css);

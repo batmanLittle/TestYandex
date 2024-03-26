@@ -1,17 +1,12 @@
 .transformation__item {
   background-image: url(../../../images/background-transform.png);
-
-  position: relative;
-  padding-left: 72px;
+  display: flex;
   padding-top: 20px;
-  color: #313131;
-  padding-right: 20px;
-  font-family: "GolosUIWebRegular", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
-  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 48px;
+  /* padding-bottom: 20px; */
+  gap: 16px;
+ 
 }
 
 .transformation__item:nth-child(3) {
@@ -24,7 +19,7 @@
   padding-right: 317px;
 }
 
-.transformation__item:before {
+/* .transformation__item:before {
   content: counter(li);
   counter-increment: li;
   position: absolute;
@@ -44,4 +39,4 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
+} */

@@ -1,7 +1,7 @@
 .transformation__image {
-  width: 440px;
+  
   height: 270px;
-  transform: rotate(3deg);
+  
   position: absolute;
   bottom: 0px;
   right: 0px;
