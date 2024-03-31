@@ -7,15 +7,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 585px;
+  /* height: 585px; */
 }
 
 @media screen and (max-width: 850px) {
   .transformation {
     max-width: 375px;
-
+    max-height: 688px;
     padding: 0px;
     gap: 20px;
-    align-items: center;
   }
 }

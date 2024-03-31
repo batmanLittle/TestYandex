@@ -1,0 +1,17 @@
+.transformation__carousel-prev {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  height: 36px;
+  width: 36px;
+  background-color: rgba(49, 49, 49, 0.2);
+  border-radius: 2em;
+  box-sizing: border-box;
+}
+
+.transformation__carousel-prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 2em;
+}

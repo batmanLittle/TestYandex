@@ -1,0 +1,10 @@
+.transformation__carousel {
+  display: none;
+}
+@media screen and (max-width: 850px) {
+  .transformation__carousel {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+  }
+}

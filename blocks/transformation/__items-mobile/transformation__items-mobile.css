@@ -1,0 +1,9 @@
+.transformation__items-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .transformation__items-mobile {
+    display: flex;
+  }
+}

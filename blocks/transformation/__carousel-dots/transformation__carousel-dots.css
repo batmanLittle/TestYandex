@@ -1,0 +1,7 @@
+.transformation__carousel-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
