@@ -1,0 +1,7 @@
+.participants__cards{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+}

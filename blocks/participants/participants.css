@@ -1,2 +1,15 @@
 .participants {
+    max-width: 1366px;
+    width: 100%;
+    display: flex;
+    padding: 0px 15px 0px 15px;
+    align-items: center;
+    justify-content: center;
 }
+
+@media screen and (max-width: 850px) {
+    .participants{
+        display: none;
+        
+    }
+  }

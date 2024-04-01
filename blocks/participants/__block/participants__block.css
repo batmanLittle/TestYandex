@@ -1,2 +1,7 @@
 .participants__block {
+    max-width: 1222px;
+    width: 100%;
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
 }

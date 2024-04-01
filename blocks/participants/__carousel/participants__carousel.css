@@ -1,0 +1,7 @@
+.participants__carousel{
+    display: flex;
+    justify-content: center;
+    
+    gap: 14px;
+    max-height: 44px;
+}

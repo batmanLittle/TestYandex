@@ -1,0 +1,7 @@
+.participants__card-link{
+    text-decoration: none;
+    border-radius: 62px;
+    border: 1px solid rgba(48, 87, 162, 1);
+    padding: 12px;
+    color: rgba(48, 87, 162, 1);
+}

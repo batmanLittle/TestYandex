@@ -1,0 +1,10 @@
+.participants__carousel-number{
+    color: rgba(49, 49, 49, 0.6);
+font-variant-numeric: lining-nums proportional-nums;
+font-family: "Golos Text";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%;
+
+}

@@ -1,0 +1,12 @@
+.participants__card-subtitle{
+    color: #313131;
+margin-top: 0px;
+margin-bottom: 20px;
+font-variant-numeric: lining-nums proportional-nums;
+font-family: "Golos Text";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; 
+opacity: 0.6;
+}

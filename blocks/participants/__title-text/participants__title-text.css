@@ -1,0 +1,20 @@
+.participants__title-text{
+    color: #313131;
+    font-family: Merriweather, sans-serif;
+font-size: 54px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 64.8px */
+text-transform: uppercase;
+margin: 0px;
+}
+
+@media screen and (max-width: 850px) {
+    .participants__title-text{
+   
+    font-size: 36px;
+   
+    line-height: 110%; /* 64.8px */
+    
+    }
+  }
