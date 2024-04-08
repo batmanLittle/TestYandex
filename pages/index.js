@@ -29,25 +29,25 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-showCards(slideIndex);
+// showCards(slideIndex);
 
-function plusCards(n) {
-  showCards((slideIndex += n));
-}
+// function plusCards(n) {
+//   showCards((slideIndex += n));
+// }
 
-function showCards(n) {
-  let i;
-  let slides = document.getElementsByClassName("participants__block");
+// function showCards(n) {
+//   let i;
+//   let slides = document.getElementsByClassName("participants__block");
 
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
+//   if (n > slides.length) {
+//     slideIndex = 1;
+//   }
+//   if (n < 1) {
+//     slideIndex = slides.length;
+//   }
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
 
-  slides[slideIndex - 1].style.display = "flex";
-}
+//   slides[slideIndex - 1].style.display = "flex";
+// }

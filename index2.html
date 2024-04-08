@@ -8,89 +8,104 @@
     <title>Document</title>
   </head>
   <body>
-    <ul class="transformation__items">
-      <li class="ff">
-        <p class="transformation__item">
-          Строительство железнодорожной магистрали Москва-Васюки
+    <div class="participants">
+      <div class="participants__block">
+        <div class="participants__title">
+          <h3 class="participants__title-text">Участники турнира</h3>
+          <div class="participants__carousel">
+            <a class="participants__carousel-prev" onclick="plusCards(-1)"
+          >❮</a
+        >
+        <p class="participants__carousel-number">
+          <span class="participants__carousel-span">3 </span>/ 6
         </p>
-        <p class="transformation__item">
-          Открытие фешенебельной гостиницы «Проходная пешка» и других
-          небоскрёбов
-        </p>
-      </li>
+        <a class="participants__carousel-next" onclick="plusCards(1)"
+          >❯</a
+        >
+          </div>
+        </div>
+        <ul class="participants__cards">
+          <li class="participants__card">
+            <img class="participants__card-img" src="./images/card-img.png" alt="карточка-участника ">
+            <h4 class="participants__card-title">Хозе-Рауль Капабланка 1</h4>
+            <p class="participants__card-subtitle">Чемпион мира по шахматам</p>
+            <a class="participants__card-link" href="#">Подробнее</a>
+          </li>
+          
+          <li class="participants__card">
+            <img class="participants__card-img" src="./images/card-img.png" alt="карточка-участника ">
+            <h4 class="participants__card-title">Эммануил Ласкер 2</h4>
+            <p class="participants__card-subtitle">Чемпион мира по шахматам</p>
+            <a class="participants__card-link" href="#">Подробнее</a>
+          </li>
+          <li class="participants__card">
+            <img class="participants__card-img" src="./images/card-img.png" alt="карточка-участника ">
+            <h4 class="participants__card-title">Александр Алехин 3</h4>
+            <p class="participants__card-subtitle">Чемпион мира по шахматам</p>
+            <a class="participants__card-link" href="#">Подробнее</a>
+          </li>
 
-      <li class="ff">
-        <p class="transformation__item">
-          Поднятие сельского хозяйства в радиусе на тысячу километров:
-          производство овощей, фруктов, икры, шоколадных конфет
-        </p>
-      </li>
-
-      <li class="ff">
-        <p class="transformation__item">Строительство дворца для турнира</p>
-        <p class="transformation__item">
-          Размещение гаражей для гостевого автотранспорта
-        </p>
-      </li>
-
-      <li class="ff">
-        <p class="transformation__item">
-          Постройка сверхмощной радиостанции для передачи всему миру
-          сенсационных результатов
-        </p>
-      </li>
-
-      <li class="ff">
-        <p class="transformation__item">
-          Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых
-          самолётов и дирижаблей во все концы света, включая Лос-Анжелос
-          и Мельбурн
-        </p>
-      </li>
-    </ul>
-    <div class="aaa">
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <div class="gggg">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
+          <li class="participants__card">
+            <img class="participants__card-img" src="./images/card-img.png" alt="карточка-участника ">
+            <h4 class="participants__card-title">Арон Нимцович 4</h4>
+            <p class="participants__card-subtitle">Чемпион мира по шахматам</p>
+            <a class="participants__card-link" href="#">Подробнее</a>
+          </li>
+          
+          <li class="participants__card">
+            <img class="participants__card-img" src="./images/card-img.png" alt="карточка-участника ">
+            <h4 class="participants__card-title">Рихард Рети 5</h4>
+            <p class="participants__card-subtitle">Чемпион мира по шахматам</p>
+            <a class="participants__card-link" href="#">Подробнее</a>
+          </li>
+          <li class="participants__card">
+            <img class="participants__card-img" src="./images/card-img.png" alt="карточка-участника ">
+            <h4 class="participants__card-title">Остап Бендер 6</h4>
+            <p class="participants__card-subtitle">Чемпион мира по шахматам</p>
+            <a class="participants__card-link" href="#">Подробнее</a>
+          </li>
+        </ul>
       </div>
-      <a class="next" onclick="plusSlides(1)">❯</a>
-    </div>
+     </div>
+
+
+  
+      
 
     <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
+let currentIndex = 0;
+const totalItems = 6; // общее количество карточек
 
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
+function plusCards(n) {
+  currentIndex = (currentIndex + n + totalItems) % totalItems; // Обеспечиваем круговую логику индексов
+  showCards();
+}
 
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
+function showCards() {
+  const cards = document.querySelectorAll(".participants__card");
+  for (let i = 0; i < totalItems; i++) {
+    if (i === (currentIndex % totalItems) || i === (currentIndex + 1) % totalItems || i === (currentIndex + 2) % totalItems) {
+      cards[i].style.display = "block";
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+  const span = document.querySelector(".participants__carousel-span");
+  span.textContent = ((currentIndex % totalItems) + 1) + " / " + totalItems;
+}
 
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("ff");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
+function autoSlide() {
+  plusCards(1);
+}
+
+// Обработка событий для кнопок вперед и назад
+document.querySelector(".participants__carousel-prev").addEventListener("click", () => plusCards(-1));
+document.querySelector(".participants__carousel-next").addEventListener("click", () => plusCards(1));
+
+// Установка автоматического обновления карточек каждые 4 секунды
+setInterval(autoSlide, 4000);
+
+showCards(); // Показываем карточки при загрузке страницы
     </script>
   </body>
 </html>
