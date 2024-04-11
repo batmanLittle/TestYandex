@@ -1,7 +1,15 @@
 .participants__block {
-    max-width: 1222px;
-    width: 100%;
-    gap: 60px;
-    display: flex;
-    flex-direction: column;
+  max-width: 1222px;
+  width: 100%;
+  gap: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 850px) {
+  .participants__block {
+    gap: 40px;
+
+    justify-content: center;
+  }
 }

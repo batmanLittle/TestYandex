@@ -6,7 +6,7 @@
   background-color: rgba(245, 73, 50, 1);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 850px) {
   .ticker__block {
     height: 38px;
   }

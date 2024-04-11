@@ -52,7 +52,7 @@
 @import url(../blocks/transformation/__carousel-dot/transformation__carousel-dot.css);
 @import url(../blocks/participants/participants.css);
 @import url(../blocks/participants/__block/participants__block.css);
-@import url(../blocks/participants/__title/participants__title.css);
+
 @import url(../blocks/participants/__title-text/participants__title-text.css);
 @import url(../blocks/participants/__carousel/participants__carousel.css);
 @import url(../blocks/participants/__carousel-prev/participants__carousel-prev.css);
@@ -65,5 +65,6 @@
 @import url(../blocks/participants/__card-title/participants__card-title.css);
 @import url(../blocks/participants/__card-subtitle/participants__card-subtitle.css);
 @import url(../blocks/participants/__card-link/participants__card-link.css);
-@import url(../blocks/participants-mobile/participants-mobile.css);
-@import url(../blocks/participants/__block-mobile/participants__block-mobile.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__block/footer__block.css);
+@import url(../blocks/footer/__subtitle/footer__subtitle.css);

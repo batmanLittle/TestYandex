@@ -13,7 +13,7 @@
   animation: text 10s linear infinite;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 850px) {
   .ticker__text {
     font-size: 16px;
   }

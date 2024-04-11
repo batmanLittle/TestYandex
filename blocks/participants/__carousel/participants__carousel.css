@@ -1,7 +1,14 @@
-.participants__carousel{
-    display: flex;
-    justify-content: center;
-    
-    gap: 14px;
-    max-height: 44px;
+.participants__carousel {
+  display: flex;
+  justify-content: center;
+
+  gap: 14px;
+  max-height: 44px;
+}
+
+@media screen and (max-width: 850px) {
+  .participants__carousel {
+    order: 1;
+    width: 100%;
+  }
 }

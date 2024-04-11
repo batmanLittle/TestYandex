@@ -1,0 +1,9 @@
+.footer__block {
+  max-width: 1104px;
+}
+
+@media screen and (max-width: 400px) {
+  .footer__block {
+    max-width: 300px;
+  }
+}
